@@ -16,7 +16,7 @@
 `sudo chown -R www-data:www-data /new_dir/graphite/storage/whisper/`
 
 6. Check if all files moved successfully.  
-`find /opt/graphite/storage/whisper/ -print -name '*.wsp' -type f -exec whisper-info.py {} \; | grep Error`
+`find /opt/graphite/storage/whisper/ -print -name '*.wsp' -type f -exec whisper-info.py {} \; | grep Error`.  
 If no file is corrupted move on, otherwise delete corrupted files 
 
 7. Start Carbon.  
